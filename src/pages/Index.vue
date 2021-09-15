@@ -2,7 +2,13 @@
   <q-page class="row">
     <q-card class="col-xs-9">
       <q-toolbar>
-        <q-input v-model="search" class="full-width" dense borderless placeholder="Search">
+        <q-input
+          v-model="search"
+          class="full-width"
+          dense
+          borderless
+          placeholder="Search"
+        >
           <template #append="">
             <q-icon name="mdi-magnify"></q-icon>
           </template>
@@ -23,12 +29,16 @@
 
     <div class="col-xs-3">
       <q-toolbar class="bg-primary">
-        <q-btn fab icon="mdi-plus" color="secondary" style="margin-bottom: -42px" class="q-ml-md">
-
+        <q-btn
+          fab
+          icon="mdi-plus"
+          color="secondary"
+          style="margin-bottom: -42px"
+          class="q-ml-md"
+        >
         </q-btn>
       </q-toolbar>
     </div>
-
   </q-page>
 </template>
 
@@ -40,7 +50,7 @@ export default defineComponent({
   data() {
     return {
       selected: "",
-      search: ""
+      search: "",
     };
   },
 });
