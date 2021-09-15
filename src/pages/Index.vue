@@ -1,5 +1,5 @@
 <template>
-  <q-page class="row">
+  <q-page class="row page-bg">
     <q-card class="col-xs-9">
       <q-toolbar>
         <q-input
@@ -44,6 +44,8 @@
 
 <script>
 import { defineComponent } from "vue";
+import { colors } from "quasar";
+const { getPaletteColor } = colors;
 
 export default defineComponent({
   name: "PageIndex",
@@ -53,5 +55,14 @@ export default defineComponent({
       search: "",
     };
   },
+  mounted() {
+    console.log(getPaletteColor("blue-9"));
+  },
 });
 </script>
+
+<style lang="scss">
+.page-bg {
+  background-color: $primary;
+}
+</style>

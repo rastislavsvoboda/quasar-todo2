@@ -25,16 +25,16 @@
       <q-item class="bg-grey-3">
         <q-item-section>Lists</q-item-section>
         <q-item-section side>
-          <q-btn flat round size="sm" icon="mdi-plus"></q-btn>
+          <q-btn flat round size="sm" icon="mdi-plus" ></q-btn>
         </q-item-section>
       </q-item>
 
       <q-list>
         <q-item clickable>
           <q-item-section side>
-            <q-icon name="mdi-shopping"></q-icon>
+            <q-icon name="mdi-shopping" color="red"></q-icon>
           </q-item-section>
-          <q-item-section>Shopping List</q-item-section>
+          <q-item-section class="text-grey-9">Shopping List</q-item-section>
           <q-item-section side> 12 </q-item-section>
         </q-item>
       </q-list>
